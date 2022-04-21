@@ -29,7 +29,7 @@ def worker_init_fn(worker_id):
 parser = argparse.ArgumentParser()
 parser.add_argument("--dataset",
     type=str,
-    default="ml_1m",
+    default="DIGIX",
     help="dataset option: 'ml_1m', 'amazon_book' ")
 parser.add_argument("--model", 
     type=str,
@@ -126,11 +126,8 @@ start_time = time.time()
 train_path = args.data_path + '{}/training_list.npy'.format(args.dataset)
 valid_path = args.data_path + '{}/validation_dict.npy'.format(args.dataset)
 test_path = args.data_path + '{}/testing_dict.npy'.format(args.dataset)
-if args.dataset == 'video':
-    if 'wo_age' in args.log_name:
-        user_feature_path = args.data_path + '{}/user_feature_min_woA_file.npy'.format(args.dataset)
-    else:
-        user_feature_path = args.data_path + '{}/user_feature_min_file.npy'.format(args.dataset)
+if args.dataset == 'DIGIX':
+    user_feature_path = args.data_path + '{}/user_feature_min_file.npy'.format(args.dataset)
 else:
     user_feature_path = args.data_path + '{}/user_feature_file.npy'.format(args.dataset)
     

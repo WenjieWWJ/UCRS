@@ -1,0 +1,25 @@
+args: Namespace(act_function='sigmoid', batch_norm=1, batch_size=1024, data_path='/storage/wjwang/filter_bubbles/data/', dataset='amazon_book_only_first', dropout=0.3, epochs=2000, gpu='1', lamda=0.1, layers='[32]', log_name='small_od_log', lr=0.01, model_path='./models', optimizer='Adagrad', topN='[10, 20]')
+user_num 29115; cate_num 29
+/storage/wjwang/anaconda3/lib/python3.7/site-packages/torch/nn/functional.py:1351: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+ epoch: 0; hit@1:0.0011639185257032007
+ epoch: 100; hit@1:0.6539282250242483
+ epoch: 200; hit@1:0.6614936954413191
+ epoch: 300; hit@1:0.6678952473326867
+ epoch: 400; hit@1:0.6706110572259942
+ epoch: 500; hit@1:0.6750727449078564
+ epoch: 600; hit@1:0.6783705140640155
+ epoch: 700; hit@1:0.6770126091173618
+ epoch: 800; hit@1:0.6793404461687682
+ epoch: 900; hit@1:0.6803103782735208
+ epoch: 1000; hit@1:0.6806983511154219
+ epoch: 1100; hit@1:0.6774005819592629
+ epoch: 1200; hit@1:0.6764306498545102
+ epoch: 1300; hit@1:0.6742967992240543
+ epoch: 1400; hit@1:0.67274490785645
+ epoch: 1500; hit@1:0.6717749757516974
+ epoch: 1600; hit@1:0.6706110572259942
+ epoch: 1700; hit@1:0.6700290979631426
+ epoch: 1800; hit@1:0.6686711930164888
+ epoch: 1900; hit@1:0.6686711930164888
+End. best_acc 0.6806983511154219

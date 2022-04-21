@@ -1,0 +1,476 @@
+args: Namespace(act_function='tanh', batch_norm=1, batch_size=512, data_path='/storage/wjwang/filter_bubbles/data/', dataset='ml_1m', dropout=0.2, epochs=3000, gpu='1', lamda=0.1, layers='[32]', log_name='od_log', lr=0.01, model_path='./models', optimizer='Adagrad', topN='[10, 20]')
+user_num 6035; cate_num 18
+/storage/wjwang/anaconda3/lib/python3.7/site-packages/torch/nn/functional.py:1340: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+ epoch: 0; hit@1:0.11297950604308986
+ epoch: 100; hit@1:0.21991592222806094
+ epoch: 200; hit@1:0.2207041513399895
+ epoch: 300; hit@1:0.22280609563846557
+ epoch: 400; hit@1:0.22280609563846557
+ epoch: 500; hit@1:0.22411981082501314
+ epoch: 600; hit@1:0.22490803993694167
+ epoch: 700; hit@1:0.22595901208617972
+ epoch: 800; hit@1:0.22727272727272727
+ epoch: 900; hit@1:0.22963741460851286
+ epoch: 1000; hit@1:0.2301629006831319
+ epoch: 1100; hit@1:0.23331581713084604
+ epoch: 1200; hit@1:0.2351550183920126
+ epoch: 1300; hit@1:0.23594324750394113
+ epoch: 1400; hit@1:0.2351550183920126
+ epoch: 1500; hit@1:0.23857067787703626
+ epoch: 1600; hit@1:0.2398843930635838
+ epoch: 1700; hit@1:0.24277456647398843
+ epoch: 1800; hit@1:0.24303730951129796
+ epoch: 1900; hit@1:0.24750394114555965
+ epoch: 2000; hit@1:0.24855491329479767
+ epoch: 2100; hit@1:0.2501313715186548
+ epoch: 2200; hit@1:0.2540725170782974
+ epoch: 2300; hit@1:0.25564897530215447
+ epoch: 2400; hit@1:0.25722543352601157
+ epoch: 2500; hit@1:0.2588018917498686
+ epoch: 2600; hit@1:0.25932737782448767
+ epoch: 2700; hit@1:0.2630057803468208
+ epoch: 2800; hit@1:0.26405675249605887
+ epoch: 2900; hit@1:0.26248029427220176
+End. best_acc 0.26405675249605887
+number of users: 6040
+number of items: 3883
+number of features: 13408
+All predicted users' number is 3806
+------------------------------------------------------------
+k: 1
+------------------------------
+alpha 0.01
+[Test] Recall: 0.0707-0.1188 NDCG: 0.0593-0.0735 WNDCG: 0.0551-0.07
+coverage_A: -4.8925 coverage_D: 8.9188
+GA_all_avg: -0.0489-0.0066-0.0437 GD_all_avg: 0.5067-0.9302-1.2355 target_GA_avg: 0.0342 target_GD_avg: 0.2601
+------------------------------
+alpha 0.01
+[Test] Recall: 0.0707-0.1188 NDCG: 0.0593-0.0735 WNDCG: 0.0551-0.07
+coverage_A: -4.8925 coverage_D: 8.9188
+GA_all_avg: -0.0489-0.0066-0.0437 GD_all_avg: 0.5067-0.9302-1.2355 target_GA_avg: 0.0342 target_GD_avg: 0.2601
+------------------------------
+alpha 0.02
+[Test] Recall: 0.073-0.1222 NDCG: 0.0611-0.0756 WNDCG: 0.0576-0.0727
+coverage_A: -4.8163 coverage_D: 8.995
+GA_all_avg: -0.1295--0.0366-0.0178 GD_all_avg: 0.4261-0.887-1.2097 target_GA_avg: 0.0655 target_GD_avg: 0.2914
+------------------------------
+alpha 0.03
+[Test] Recall: 0.0742-0.1265 NDCG: 0.0616-0.0771 WNDCG: 0.0584-0.0747
+coverage_A: -4.9033 coverage_D: 8.908
+GA_all_avg: -0.1911--0.0738--0.0091 GD_all_avg: 0.3645-0.8498-1.1827 target_GA_avg: 0.0866 target_GD_avg: 0.3126
+------------------------------
+alpha 0.04
+[Test] Recall: 0.0757-0.1276 NDCG: 0.0622-0.0779 WNDCG: 0.0592-0.0757
+coverage_A: -5.0423 coverage_D: 8.769
+GA_all_avg: -0.2389--0.1062--0.0361 GD_all_avg: 0.3167-0.8174-1.1557 target_GA_avg: 0.1022 target_GD_avg: 0.3282
+------------------------------
+alpha 0.05
+[Test] Recall: 0.0764-0.129 NDCG: 0.0621-0.0782 WNDCG: 0.0594-0.0762
+coverage_A: -5.2231 coverage_D: 8.5883
+GA_all_avg: -0.2767--0.1342--0.0619 GD_all_avg: 0.2789-0.7894-1.1299 target_GA_avg: 0.113 target_GD_avg: 0.339
+------------------------------
+alpha 0.06
+[Test] Recall: 0.0777-0.1298 NDCG: 0.0623-0.0781 WNDCG: 0.0597-0.0763
+coverage_A: -5.4251 coverage_D: 8.3862
+GA_all_avg: -0.3066--0.1593--0.0838 GD_all_avg: 0.249-0.7643-1.108 target_GA_avg: 0.1203 target_GD_avg: 0.3462
+------------------------------
+alpha 0.07
+[Test] Recall: 0.077-0.1309 NDCG: 0.0616-0.0779 WNDCG: 0.0592-0.0763
+coverage_A: -5.6377 coverage_D: 8.1737
+GA_all_avg: -0.3307--0.181--0.1046 GD_all_avg: 0.2249-0.7426-1.0872 target_GA_avg: 0.1255 target_GD_avg: 0.3515
+------------------------------
+alpha 0.075
+[Test] Recall: 0.0769-0.1315 NDCG: 0.0614-0.0778 WNDCG: 0.059-0.0763
+coverage_A: -5.7333 coverage_D: 8.078
+GA_all_avg: -0.3408--0.1902--0.1142 GD_all_avg: 0.2148-0.7334-1.0776 target_GA_avg: 0.1272 target_GD_avg: 0.3532
+------------------------------
+alpha 0.08
+[Test] Recall: 0.0771-0.1312 NDCG: 0.061-0.0774 WNDCG: 0.0587-0.0761
+coverage_A: -5.8292 coverage_D: 7.9821
+GA_all_avg: -0.3499--0.1989--0.1226 GD_all_avg: 0.2056-0.7247-1.0693 target_GA_avg: 0.1282 target_GD_avg: 0.3542
+------------------------------
+alpha 0.09
+[Test] Recall: 0.0766-0.1302 NDCG: 0.0608-0.0769 WNDCG: 0.0585-0.0757
+coverage_A: -5.9976 coverage_D: 7.8137
+GA_all_avg: -0.366--0.2132--0.1386 GD_all_avg: 0.1896-0.7104-1.0533 target_GA_avg: 0.1311 target_GD_avg: 0.357
+------------------------------
+alpha 0.1
+[Test] Recall: 0.074-0.1298 NDCG: 0.0594-0.0766 WNDCG: 0.0573-0.0754
+coverage_A: -6.1797 coverage_D: 7.6316
+GA_all_avg: -0.379--0.2266--0.153 GD_all_avg: 0.1766-0.697-1.0389 target_GA_avg: 0.1329 target_GD_avg: 0.3589
+------------------------------
+alpha 0.5
+[Test] Recall: 0.0512-0.0993 NDCG: 0.0451-0.0602 WNDCG: 0.0431-0.0594
+coverage_A: -9.5326 coverage_D: 4.2788
+GA_all_avg: -0.5054--0.4252--0.4039 GD_all_avg: 0.0502-0.4984-0.7879 target_GA_avg: 0.1042 target_GD_avg: 0.3301
+------------------------------
+alpha 1
+[Test] Recall: 0.0391-0.0687 NDCG: 0.0379-0.0467 WNDCG: 0.0359-0.0458
+coverage_A: -11.1432 coverage_D: 2.6682
+GA_all_avg: -0.5253--0.4953--0.5106 GD_all_avg: 0.0302-0.4283-0.6812 target_GA_avg: 0.072 target_GD_avg: 0.2979
+------------------------------------------------------------
+k: 2
+------------------------------
+alpha 0.01
+[Test] Recall: 0.0707-0.1194 NDCG: 0.0594-0.0739 WNDCG: 0.0553-0.0704
+coverage_A: -4.8565 coverage_D: 8.9548
+GA_all_avg: -0.0509-0.0041-0.0405 GD_all_avg: 0.5047-0.9277-1.2324 target_GA_avg: 0.0349 target_GD_avg: 0.2609
+------------------------------
+alpha 0.01
+[Test] Recall: 0.0707-0.1194 NDCG: 0.0594-0.0739 WNDCG: 0.0553-0.0704
+coverage_A: -4.8565 coverage_D: 8.9548
+GA_all_avg: -0.0509-0.0041-0.0405 GD_all_avg: 0.5047-0.9277-1.2324 target_GA_avg: 0.0349 target_GD_avg: 0.2609
+------------------------------
+alpha 0.02
+[Test] Recall: 0.0731-0.1233 NDCG: 0.0614-0.0762 WNDCG: 0.0579-0.0734
+coverage_A: -4.7273 coverage_D: 9.0841
+GA_all_avg: -0.1326--0.0421-0.0099 GD_all_avg: 0.423-0.8815-1.2017 target_GA_avg: 0.0652 target_GD_avg: 0.2912
+------------------------------
+alpha 0.03
+[Test] Recall: 0.0744-0.1271 NDCG: 0.0616-0.0775 WNDCG: 0.0585-0.0751
+coverage_A: -4.8071 coverage_D: 9.0042
+GA_all_avg: -0.195--0.0823--0.0212 GD_all_avg: 0.3606-0.8413-1.1707 target_GA_avg: 0.0856 target_GD_avg: 0.3116
+------------------------------
+alpha 0.04
+[Test] Recall: 0.0768-0.1287 NDCG: 0.0626-0.0785 WNDCG: 0.0599-0.0764
+coverage_A: -4.9188 coverage_D: 8.8925
+GA_all_avg: -0.2435--0.1173--0.0525 GD_all_avg: 0.3121-0.8063-1.1394 target_GA_avg: 0.1015 target_GD_avg: 0.3275
+------------------------------
+alpha 0.05
+[Test] Recall: 0.0771-0.1309 NDCG: 0.0625-0.079 WNDCG: 0.0598-0.0771
+coverage_A: -5.0583 coverage_D: 8.753
+GA_all_avg: -0.2809--0.1484--0.0832 GD_all_avg: 0.2747-0.7752-1.1086 target_GA_avg: 0.1094 target_GD_avg: 0.3353
+------------------------------
+alpha 0.06
+[Test] Recall: 0.0783-0.1314 NDCG: 0.0624-0.0788 WNDCG: 0.0599-0.0771
+coverage_A: -5.2578 coverage_D: 8.5536
+GA_all_avg: -0.3103--0.1739--0.1064 GD_all_avg: 0.2453-0.7497-1.0854 target_GA_avg: 0.1159 target_GD_avg: 0.3419
+------------------------------
+alpha 0.07
+[Test] Recall: 0.0778-0.1319 NDCG: 0.0619-0.0785 WNDCG: 0.0596-0.0769
+coverage_A: -5.4385 coverage_D: 8.3728
+GA_all_avg: -0.3336--0.1946--0.1273 GD_all_avg: 0.2219-0.729-1.0646 target_GA_avg: 0.1219 target_GD_avg: 0.3478
+------------------------------
+alpha 0.075
+[Test] Recall: 0.0772-0.1317 NDCG: 0.0614-0.0781 WNDCG: 0.0591-0.0767
+coverage_A: -5.5189 coverage_D: 8.2924
+GA_all_avg: -0.3442--0.2048--0.1376 GD_all_avg: 0.2114-0.7188-1.0542 target_GA_avg: 0.1231 target_GD_avg: 0.3491
+------------------------------
+alpha 0.08
+[Test] Recall: 0.0773-0.1315 NDCG: 0.0611-0.0778 WNDCG: 0.0588-0.0765
+coverage_A: -5.6324 coverage_D: 8.1789
+GA_all_avg: -0.3539--0.214--0.1465 GD_all_avg: 0.2017-0.7096-1.0453 target_GA_avg: 0.1249 target_GD_avg: 0.3508
+------------------------------
+alpha 0.09
+[Test] Recall: 0.0769-0.1307 NDCG: 0.0608-0.0774 WNDCG: 0.0586-0.0762
+coverage_A: -5.7914 coverage_D: 8.02
+GA_all_avg: -0.3697--0.2289--0.1638 GD_all_avg: 0.1859-0.6947-1.028 target_GA_avg: 0.1277 target_GD_avg: 0.3537
+------------------------------
+alpha 0.1
+[Test] Recall: 0.0749-0.1305 NDCG: 0.0598-0.0772 WNDCG: 0.0578-0.0761
+coverage_A: -5.9364 coverage_D: 7.8749
+GA_all_avg: -0.3832--0.2443--0.1808 GD_all_avg: 0.1723-0.6793-1.011 target_GA_avg: 0.1299 target_GD_avg: 0.3559
+------------------------------
+alpha 0.5
+[Test] Recall: 0.0504-0.1029 NDCG: 0.0443-0.0608 WNDCG: 0.0424-0.0601
+coverage_A: -9.1374 coverage_D: 4.6739
+GA_all_avg: -0.5086--0.4358--0.4272 GD_all_avg: 0.047-0.4878-0.7646 target_GA_avg: 0.1059 target_GD_avg: 0.3318
+------------------------------
+alpha 1
+[Test] Recall: 0.0398-0.0716 NDCG: 0.0378-0.0473 WNDCG: 0.0358-0.0465
+coverage_A: -10.7112 coverage_D: 3.1001
+GA_all_avg: -0.5259--0.4985--0.5239 GD_all_avg: 0.0297-0.4251-0.6679 target_GA_avg: 0.0769 target_GD_avg: 0.3028
+------------------------------------------------------------
+k: 3
+------------------------------
+alpha 0.01
+[Test] Recall: 0.0709-0.1193 NDCG: 0.0592-0.0736 WNDCG: 0.055-0.0701
+coverage_A: -4.8106 coverage_D: 9.0008
+GA_all_avg: -0.0527-0.0011-0.0375 GD_all_avg: 0.5029-0.9247-1.2293 target_GA_avg: 0.0341 target_GD_avg: 0.2601
+------------------------------
+alpha 0.01
+[Test] Recall: 0.0709-0.1193 NDCG: 0.0592-0.0736 WNDCG: 0.055-0.0701
+coverage_A: -4.8106 coverage_D: 9.0008
+GA_all_avg: -0.0527-0.0011-0.0375 GD_all_avg: 0.5029-0.9247-1.2293 target_GA_avg: 0.0341 target_GD_avg: 0.2601
+------------------------------
+alpha 0.02
+[Test] Recall: 0.0741-0.1231 NDCG: 0.0614-0.076 WNDCG: 0.0579-0.0732
+coverage_A: -4.65 coverage_D: 9.1613
+GA_all_avg: -0.1352--0.0467-0.005 GD_all_avg: 0.4204-0.8769-1.1968 target_GA_avg: 0.0641 target_GD_avg: 0.29
+------------------------------
+alpha 0.03
+[Test] Recall: 0.075-0.1275 NDCG: 0.0615-0.0774 WNDCG: 0.0583-0.0749
+coverage_A: -4.6923 coverage_D: 9.119
+GA_all_avg: -0.1978--0.0898--0.0302 GD_all_avg: 0.3578-0.8338-1.1616 target_GA_avg: 0.0823 target_GD_avg: 0.3083
+------------------------------
+alpha 0.04
+[Test] Recall: 0.077-0.1294 NDCG: 0.0625-0.0785 WNDCG: 0.0595-0.0762
+coverage_A: -4.7798 coverage_D: 9.0315
+GA_all_avg: -0.245--0.1245--0.0621 GD_all_avg: 0.3106-0.7991-1.1297 target_GA_avg: 0.0974 target_GD_avg: 0.3233
+------------------------------
+alpha 0.05
+[Test] Recall: 0.0772-0.1312 NDCG: 0.0622-0.0789 WNDCG: 0.0594-0.0768
+coverage_A: -4.891 coverage_D: 8.9204
+GA_all_avg: -0.2815--0.156--0.0929 GD_all_avg: 0.274-0.7676-1.099 target_GA_avg: 0.1044 target_GD_avg: 0.3304
+------------------------------
+alpha 0.06
+[Test] Recall: 0.0785-0.1314 NDCG: 0.0624-0.0789 WNDCG: 0.0597-0.077
+coverage_A: -5.0617 coverage_D: 8.7496
+GA_all_avg: -0.3113--0.1829--0.1185 GD_all_avg: 0.2443-0.7407-1.0734 target_GA_avg: 0.1102 target_GD_avg: 0.3362
+------------------------------
+alpha 0.07
+[Test] Recall: 0.0781-0.1317 NDCG: 0.0621-0.0787 WNDCG: 0.0595-0.0769
+coverage_A: -5.2291 coverage_D: 8.5822
+GA_all_avg: -0.3349--0.2046--0.1407 GD_all_avg: 0.2207-0.719-1.0511 target_GA_avg: 0.1152 target_GD_avg: 0.3412
+------------------------------
+alpha 0.075
+[Test] Recall: 0.0775-0.1317 NDCG: 0.0615-0.0784 WNDCG: 0.0589-0.0766
+coverage_A: -5.2993 coverage_D: 8.5121
+GA_all_avg: -0.345--0.2153--0.1527 GD_all_avg: 0.2106-0.7083-1.0391 target_GA_avg: 0.1159 target_GD_avg: 0.3419
+------------------------------
+alpha 0.08
+[Test] Recall: 0.0776-0.131 NDCG: 0.0612-0.0779 WNDCG: 0.0587-0.0763
+coverage_A: -5.3981 coverage_D: 8.4133
+GA_all_avg: -0.3543--0.2244--0.1611 GD_all_avg: 0.2013-0.6992-1.0307 target_GA_avg: 0.1174 target_GD_avg: 0.3434
+------------------------------
+alpha 0.09
+[Test] Recall: 0.0762-0.1298 NDCG: 0.0607-0.0773 WNDCG: 0.0583-0.0758
+coverage_A: -5.5507 coverage_D: 8.2606
+GA_all_avg: -0.3701--0.2393--0.1788 GD_all_avg: 0.1855-0.6843-1.0131 target_GA_avg: 0.1198 target_GD_avg: 0.3458
+------------------------------
+alpha 0.1
+[Test] Recall: 0.0748-0.1298 NDCG: 0.0598-0.077 WNDCG: 0.0575-0.0757
+coverage_A: -5.6992 coverage_D: 8.1122
+GA_all_avg: -0.3843--0.2546--0.1956 GD_all_avg: 0.1713-0.669-0.9962 target_GA_avg: 0.1221 target_GD_avg: 0.3481
+------------------------------
+alpha 0.5
+[Test] Recall: 0.0504-0.1022 NDCG: 0.044-0.0603 WNDCG: 0.0419-0.0594
+coverage_A: -8.8605 coverage_D: 4.9509
+GA_all_avg: -0.509--0.4441--0.4434 GD_all_avg: 0.0466-0.4795-0.7484 target_GA_avg: 0.0958 target_GD_avg: 0.3217
+------------------------------
+alpha 1
+[Test] Recall: 0.0392-0.0721 NDCG: 0.0375-0.0472 WNDCG: 0.0354-0.0462
+coverage_A: -10.4078 coverage_D: 3.4036
+GA_all_avg: -0.5258--0.5058--0.5383 GD_all_avg: 0.0298-0.4178-0.6535 target_GA_avg: 0.0694 target_GD_avg: 0.2953
+
+------------------------------------
+user_target_main
+------------------------------------
+
+------------------------------------------------------------
+k: 1
+------------------------------
+alpha 0.01
+[Test] Recall: 0.0676-0.1175 NDCG: 0.0548-0.0702 WNDCG: 0.0499-0.066
+coverage_A: -5.0284 coverage_D: 8.783
+GA_all_avg: 0.0369-0.0405-0.0501 GD_all_avg: 0.5924-0.9641-1.2419 target_GA_avg: -0.0016 target_GD_avg: 0.2244
+------------------------------
+alpha 0.01
+[Test] Recall: 0.0676-0.1175 NDCG: 0.0548-0.0702 WNDCG: 0.0499-0.066
+coverage_A: -5.0284 coverage_D: 8.783
+GA_all_avg: 0.0369-0.0405-0.0501 GD_all_avg: 0.5924-0.9641-1.2419 target_GA_avg: -0.0016 target_GD_avg: 0.2244
+------------------------------
+alpha 0.02
+[Test] Recall: 0.0682-0.118 NDCG: 0.0556-0.0709 WNDCG: 0.0511-0.0671
+coverage_A: -4.9175 coverage_D: 8.8939
+GA_all_avg: 0.0288-0.0304-0.0376 GD_all_avg: 0.5843-0.954-1.2295 target_GA_avg: 0.0003 target_GD_avg: 0.2263
+------------------------------
+alpha 0.03
+[Test] Recall: 0.0686-0.1187 NDCG: 0.0555-0.071 WNDCG: 0.0511-0.0673
+coverage_A: -4.8657 coverage_D: 8.9456
+GA_all_avg: 0.0219-0.0207-0.0255 GD_all_avg: 0.5775-0.9443-1.2173 target_GA_avg: 0.0014 target_GD_avg: 0.2274
+------------------------------
+alpha 0.04
+[Test] Recall: 0.069-0.1186 NDCG: 0.0558-0.0712 WNDCG: 0.0516-0.0676
+coverage_A: -4.8127 coverage_D: 8.9987
+GA_all_avg: 0.0128-0.0089-0.0109 GD_all_avg: 0.5683-0.9325-1.2028 target_GA_avg: 0.0026 target_GD_avg: 0.2286
+------------------------------
+alpha 0.05
+[Test] Recall: 0.0688-0.118 NDCG: 0.056-0.0712 WNDCG: 0.0518-0.0677
+coverage_A: -4.7914 coverage_D: 9.02
+GA_all_avg: 0.004--0.0026--0.0034 GD_all_avg: 0.5595-0.921-1.1884 target_GA_avg: 0.004 target_GD_avg: 0.2299
+------------------------------
+alpha 0.06
+[Test] Recall: 0.0686-0.1178 NDCG: 0.0559-0.071 WNDCG: 0.0517-0.0676
+coverage_A: -4.7764 coverage_D: 9.0349
+GA_all_avg: -0.0048--0.0134--0.0166 GD_all_avg: 0.5507-0.9102-1.1753 target_GA_avg: 0.0049 target_GD_avg: 0.2309
+------------------------------
+alpha 0.07
+[Test] Recall: 0.0692-0.1179 NDCG: 0.0559-0.071 WNDCG: 0.0519-0.0677
+coverage_A: -4.7651 coverage_D: 9.0462
+GA_all_avg: -0.0121--0.0234--0.0296 GD_all_avg: 0.5435-0.9002-1.1622 target_GA_avg: 0.0058 target_GD_avg: 0.2317
+------------------------------
+alpha 0.075
+[Test] Recall: 0.0688-0.1179 NDCG: 0.0557-0.0712 WNDCG: 0.0517-0.0679
+coverage_A: -4.7667 coverage_D: 9.0447
+GA_all_avg: -0.0166--0.0293--0.0373 GD_all_avg: 0.539-0.8943-1.1545 target_GA_avg: 0.0059 target_GD_avg: 0.2318
+------------------------------
+alpha 0.08
+[Test] Recall: 0.0687-0.1172 NDCG: 0.0556-0.0708 WNDCG: 0.0517-0.0676
+coverage_A: -4.7688 coverage_D: 9.0426
+GA_all_avg: -0.0204--0.0346--0.0445 GD_all_avg: 0.5352-0.889-1.1473 target_GA_avg: 0.0065 target_GD_avg: 0.2324
+------------------------------
+alpha 0.09
+[Test] Recall: 0.068-0.1167 NDCG: 0.0547-0.0701 WNDCG: 0.0509-0.067
+coverage_A: -4.769 coverage_D: 9.0423
+GA_all_avg: -0.0283--0.0455--0.0583 GD_all_avg: 0.5273-0.8781-1.1335 target_GA_avg: 0.0071 target_GD_avg: 0.2331
+------------------------------
+alpha 0.1
+[Test] Recall: 0.0677-0.1169 NDCG: 0.0543-0.07 WNDCG: 0.0507-0.0669
+coverage_A: -4.7811 coverage_D: 9.0302
+GA_all_avg: -0.0362--0.0571--0.0732 GD_all_avg: 0.5194-0.8665-1.1186 target_GA_avg: 0.0067 target_GD_avg: 0.2327
+------------------------------
+alpha 0.5
+[Test] Recall: 0.0521-0.1006 NDCG: 0.0425-0.058 WNDCG: 0.0404-0.0558
+coverage_A: -5.6169 coverage_D: 8.1944
+GA_all_avg: -0.2508--0.3613--0.4534 GD_all_avg: 0.3048-0.5623-0.7384 target_GA_avg: 0.0119 target_GD_avg: 0.2379
+------------------------------
+alpha 1
+[Test] Recall: 0.0365-0.0491 NDCG: 0.0357-0.0386 WNDCG: 0.0339-0.0378
+coverage_A: -6.4136 coverage_D: 7.3978
+GA_all_avg: -0.3812--0.5438--0.6708 GD_all_avg: 0.1744-0.3798-0.521 target_GA_avg: 0.013 target_GD_avg: 0.2389
+------------------------------------------------------------
+k: 2
+------------------------------
+alpha 0.01
+[Test] Recall: 0.0682-0.1178 NDCG: 0.0547-0.07 WNDCG: 0.0497-0.0658
+coverage_A: -4.8826 coverage_D: 8.9288
+GA_all_avg: 0.0323-0.0334-0.0435 GD_all_avg: 0.5879-0.957-1.2353 target_GA_avg: -0.0029 target_GD_avg: 0.2231
+------------------------------
+alpha 0.01
+[Test] Recall: 0.0682-0.1178 NDCG: 0.0547-0.07 WNDCG: 0.0497-0.0658
+coverage_A: -4.8826 coverage_D: 8.9288
+GA_all_avg: 0.0323-0.0334-0.0435 GD_all_avg: 0.5879-0.957-1.2353 target_GA_avg: -0.0029 target_GD_avg: 0.2231
+------------------------------
+alpha 0.02
+[Test] Recall: 0.0699-0.1179 NDCG: 0.056-0.0707 WNDCG: 0.0512-0.0667
+coverage_A: -4.6343 coverage_D: 9.1771
+GA_all_avg: 0.0195-0.017-0.025 GD_all_avg: 0.575-0.9406-1.2168 target_GA_avg: -0.0024 target_GD_avg: 0.2236
+------------------------------
+alpha 0.03
+[Test] Recall: 0.0707-0.1186 NDCG: 0.0558-0.0708 WNDCG: 0.0512-0.0669
+coverage_A: -4.5032 coverage_D: 9.3082
+GA_all_avg: 0.008-0.0003-0.0059 GD_all_avg: 0.5636-0.9239-1.1978 target_GA_avg: -0.0019 target_GD_avg: 0.2241
+------------------------------
+alpha 0.04
+[Test] Recall: 0.0715-0.1194 NDCG: 0.0562-0.0714 WNDCG: 0.0518-0.0676
+coverage_A: -4.3749 coverage_D: 9.4364
+GA_all_avg: -0.0057--0.0176--0.0164 GD_all_avg: 0.5499-0.906-1.1754 target_GA_avg: -0.0015 target_GD_avg: 0.2245
+------------------------------
+alpha 0.05
+[Test] Recall: 0.0711-0.1179 NDCG: 0.0562-0.0711 WNDCG: 0.0518-0.0674
+coverage_A: -4.2743 coverage_D: 9.537
+GA_all_avg: -0.0175--0.0358--0.0385 GD_all_avg: 0.5381-0.8878-1.1533 target_GA_avg: -0.0017 target_GD_avg: 0.2243
+------------------------------
+alpha 0.06
+[Test] Recall: 0.0713-0.1176 NDCG: 0.0562-0.071 WNDCG: 0.052-0.0674
+coverage_A: -4.2081 coverage_D: 9.6033
+GA_all_avg: -0.0302--0.0529--0.0583 GD_all_avg: 0.5254-0.8707-1.1336 target_GA_avg: -0.0013 target_GD_avg: 0.2246
+------------------------------
+alpha 0.07
+[Test] Recall: 0.0712-0.1179 NDCG: 0.0562-0.0712 WNDCG: 0.0521-0.0677
+coverage_A: -4.14 coverage_D: 9.6713
+GA_all_avg: -0.0427--0.0702--0.079 GD_all_avg: 0.5128-0.8534-1.1128 target_GA_avg: -0.0021 target_GD_avg: 0.2239
+------------------------------
+alpha 0.075
+[Test] Recall: 0.0713-0.1172 NDCG: 0.056-0.0709 WNDCG: 0.052-0.0675
+coverage_A: -4.1238 coverage_D: 9.6876
+GA_all_avg: -0.0492--0.0797--0.0898 GD_all_avg: 0.5064-0.8439-1.102 target_GA_avg: -0.0024 target_GD_avg: 0.2235
+------------------------------
+alpha 0.08
+[Test] Recall: 0.0709-0.1168 NDCG: 0.0557-0.0707 WNDCG: 0.0518-0.0674
+coverage_A: -4.1012 coverage_D: 9.7102
+GA_all_avg: -0.0555--0.0882--0.1004 GD_all_avg: 0.5001-0.8354-1.0914 target_GA_avg: -0.0024 target_GD_avg: 0.2235
+------------------------------
+alpha 0.09
+[Test] Recall: 0.0698-0.1165 NDCG: 0.0546-0.0701 WNDCG: 0.051-0.0669
+coverage_A: -4.0757 coverage_D: 9.7357
+GA_all_avg: -0.066--0.1032--0.1186 GD_all_avg: 0.4896-0.8204-1.0733 target_GA_avg: -0.0018 target_GD_avg: 0.2242
+------------------------------
+alpha 0.1
+[Test] Recall: 0.0694-0.1156 NDCG: 0.0542-0.0695 WNDCG: 0.0506-0.0664
+coverage_A: -4.0562 coverage_D: 9.7551
+GA_all_avg: -0.0773--0.1193--0.1382 GD_all_avg: 0.4783-0.8043-1.0536 target_GA_avg: -0.0026 target_GD_avg: 0.2234
+------------------------------
+alpha 0.5
+[Test] Recall: 0.0517-0.0897 NDCG: 0.0455-0.0565 WNDCG: 0.0428-0.0544
+coverage_A: -3.8736 coverage_D: 9.9377
+GA_all_avg: -0.2551--0.3687--0.431 GD_all_avg: 0.3005-0.5549-0.7609 target_GA_avg: -0.0049 target_GD_avg: 0.221
+------------------------------
+alpha 1
+[Test] Recall: 0.0502-0.0692 NDCG: 0.0449-0.0505 WNDCG: 0.0423-0.0487
+coverage_A: -3.8946 coverage_D: 9.9167
+GA_all_avg: -0.2759--0.3981--0.464 GD_all_avg: 0.2797-0.5255-0.7278 target_GA_avg: -0.0058 target_GD_avg: 0.2201
+------------------------------------------------------------
+k: 3
+------------------------------
+alpha 0.01
+[Test] Recall: 0.0679-0.1191 NDCG: 0.0562-0.0718 WNDCG: 0.052-0.0682
+coverage_A: -4.917 coverage_D: 8.8944
+GA_all_avg: 0.0046-0.0469-0.0746 GD_all_avg: 0.5602-0.9705-1.2664 target_GA_avg: 0.0275 target_GD_avg: 0.2535
+------------------------------
+alpha 0.01
+[Test] Recall: 0.0679-0.1191 NDCG: 0.0562-0.0718 WNDCG: 0.052-0.0682
+coverage_A: -4.917 coverage_D: 8.8944
+GA_all_avg: 0.0046-0.0469-0.0746 GD_all_avg: 0.5602-0.9705-1.2664 target_GA_avg: 0.0275 target_GD_avg: 0.2535
+------------------------------
+alpha 0.02
+[Test] Recall: 0.0691-0.1205 NDCG: 0.0571-0.0729 WNDCG: 0.0538-0.0699
+coverage_A: -4.7457 coverage_D: 9.0657
+GA_all_avg: -0.0381-0.0343-0.0753 GD_all_avg: 0.5175-0.9579-1.2672 target_GA_avg: 0.0569 target_GD_avg: 0.2828
+------------------------------
+alpha 0.03
+[Test] Recall: 0.0682-0.1211 NDCG: 0.0567-0.0732 WNDCG: 0.054-0.0707
+coverage_A: -4.6448 coverage_D: 9.1666
+GA_all_avg: -0.0741-0.0165-0.0688 GD_all_avg: 0.4815-0.9401-1.2606 target_GA_avg: 0.0786 target_GD_avg: 0.3046
+------------------------------
+alpha 0.04
+[Test] Recall: 0.0689-0.1215 NDCG: 0.057-0.0735 WNDCG: 0.0545-0.0714
+coverage_A: -4.5654 coverage_D: 9.2459
+GA_all_avg: -0.0993-0.0008-0.0571 GD_all_avg: 0.4563-0.9244-1.2489 target_GA_avg: 0.0922 target_GD_avg: 0.3182
+------------------------------
+alpha 0.05
+[Test] Recall: 0.0693-0.1228 NDCG: 0.057-0.0737 WNDCG: 0.0546-0.0717
+coverage_A: -4.4955 coverage_D: 9.3158
+GA_all_avg: -0.1184--0.0164-0.0444 GD_all_avg: 0.4372-0.9072-1.2363 target_GA_avg: 0.0987 target_GD_avg: 0.3246
+------------------------------
+alpha 0.06
+[Test] Recall: 0.0702-0.1225 NDCG: 0.0574-0.0735 WNDCG: 0.055-0.0719
+coverage_A: -4.4404 coverage_D: 9.371
+GA_all_avg: -0.1319--0.0308-0.0317 GD_all_avg: 0.4237-0.8928-1.2235 target_GA_avg: 0.1032 target_GD_avg: 0.3292
+------------------------------
+alpha 0.07
+[Test] Recall: 0.0696-0.1229 NDCG: 0.0573-0.0738 WNDCG: 0.0551-0.0724
+coverage_A: -4.3983 coverage_D: 9.413
+GA_all_avg: -0.1407--0.04-0.0244 GD_all_avg: 0.4148-0.8836-1.2162 target_GA_avg: 0.1057 target_GD_avg: 0.3317
+------------------------------
+alpha 0.075
+[Test] Recall: 0.0698-0.1221 NDCG: 0.0574-0.0735 WNDCG: 0.0551-0.072
+coverage_A: -4.3836 coverage_D: 9.4277
+GA_all_avg: -0.1446--0.0442-0.0212 GD_all_avg: 0.411-0.8794-1.2131 target_GA_avg: 0.1065 target_GD_avg: 0.3324
+------------------------------
+alpha 0.08
+[Test] Recall: 0.0695-0.1221 NDCG: 0.0572-0.0733 WNDCG: 0.0549-0.0719
+coverage_A: -4.3734 coverage_D: 9.438
+GA_all_avg: -0.1474--0.0471-0.0191 GD_all_avg: 0.4082-0.8765-1.2109 target_GA_avg: 0.1075 target_GD_avg: 0.3334
+------------------------------
+alpha 0.09
+[Test] Recall: 0.0693-0.1212 NDCG: 0.057-0.073 WNDCG: 0.0548-0.0717
+coverage_A: -4.3581 coverage_D: 9.4532
+GA_all_avg: -0.1519--0.0525-0.0141 GD_all_avg: 0.4037-0.8711-1.2059 target_GA_avg: 0.108 target_GD_avg: 0.334
+------------------------------
+alpha 0.1
+[Test] Recall: 0.0686-0.1186 NDCG: 0.0567-0.0723 WNDCG: 0.0545-0.0711
+coverage_A: -4.336 coverage_D: 9.4753
+GA_all_avg: -0.1561--0.0576-0.0092 GD_all_avg: 0.3995-0.866-1.2011 target_GA_avg: 0.1086 target_GD_avg: 0.3345
+------------------------------
+alpha 0.5
+[Test] Recall: 0.0675-0.11 NDCG: 0.0566-0.07 WNDCG: 0.0543-0.069
+coverage_A: -4.2525 coverage_D: 9.5589
+GA_all_avg: -0.1739--0.0799--0.0113 GD_all_avg: 0.3816-0.8437-1.1805 target_GA_avg: 0.1117 target_GD_avg: 0.3377
+------------------------------
+alpha 1
+[Test] Recall: 0.0678-0.1097 NDCG: 0.0566-0.07 WNDCG: 0.0543-0.0689
+coverage_A: -4.252 coverage_D: 9.5594
+GA_all_avg: -0.1741--0.08--0.0115 GD_all_avg: 0.3815-0.8436-1.1804 target_GA_avg: 0.1118 target_GD_avg: 0.3377

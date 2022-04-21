@@ -34,12 +34,22 @@ cd item_controls
 python inference.py 
 ```
 #### user-feature coarse-grained controls
+- UCI and maskUF for FM and NFM
 ```
 cd user_coarse_controls
-python reranking_user_side_control.py 
+python UCI_coarse_user_control.py --model=FM
+```
+- inference for vanilla FM and NFM
+```
+python FM_NFM_inference.py --model=FM
 ```
 #### user-feature fine-grained controls
+- UCI and changeUF for FM and NFM
 ```
 cd user_fine_controls
-python reranking_user_side_control.py 
+python UCI_fine_user_control.py --model=FM
+```
+- inference for vanilla FM and NFM
+```
+python FM_NFM_inference.py --model=FM
 ```
