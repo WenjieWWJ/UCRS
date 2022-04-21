@@ -1,6 +1,11 @@
-# UCRS
+# User-controllable Recommendation Against Filter Bubbles
 
-> This is the code of "User-controllable Recommendation Against Filter Bubbles".
+
+This is the pytorch implementation of our paper at SIGIR 2022:
+
+> [User-controllable Recommendation Against Filter Bubbles]()
+>
+> Wenjie Wang, Fuli Feng, Liqiang Nie, Tat-Seng Chua.
 
 ## Environment
 
@@ -53,3 +58,15 @@ python UCI_fine_user_control.py --model=FM
 ```
 python FM_NFM_inference.py --model=FM
 ```
+
+
+## Acknowledgment
+
+Thanks to the FM/NFM implementation:
+
+- [NFM-torch](https://github.com/guoyang9/NFM-pyorch/) from Yangyang Guo.
+- [NFM-tensorflow](https://github.com/hexiangnan/neural_factorization_machine) from Xiangnan He. 
+
+## License
+
+NUS © [NExT++](https://www.nextcenter.org/)
