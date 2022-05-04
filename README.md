@@ -3,7 +3,7 @@
 
 This is the pytorch implementation of our paper at SIGIR 2022:
 
-> [User-controllable Recommendation Against Filter Bubbles]()
+> [User-controllable Recommendation Against Filter Bubbles](https://arxiv.org/abs/2204.13844)
 >
 > Wenjie Wang, Fuli Feng, Liqiang Nie, Tat-Seng Chua.
 
